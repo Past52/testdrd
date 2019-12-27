@@ -1,0 +1,57 @@
+<div class="container">
+  
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <center><div class="toast" data-autohide="false">
+    <div class="toast-header">
+      <img src="https://cdn.discordapp.com/attachments/588982177006354466/589261595528396840/c9587b490ba4e964.png"  width="25px;" class="mr-auto">
+      <strong class="mr-auto">Loading...</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+    </div>
+<div style="color:gray" class="toast-body">
+      Wait for the site to download 4 seconds for full download :)
+    </div>
+  </div>
+</div></center>
+
+<script>
+$(document).ready(function(){
+  $('.toast').toast('show');
+});
+</script>
+  
+  <br><br><br>
+  <div    class="spinner-border" role="status">
+     <img height="250" width="250" src="https://cdn.discordapp.com/attachments/587160970892279841/589094072396939295/exos-iconebanner.png">
+  </div>
+</div>
+    
+<script>
+////// Right click
+$(function() {
+	$(this).bind("contextmenu", function(e) {
+		e.preventDefault();
+	});
+});
+////// F12
+$(document).keydown(function (event) {
+    if (event.keyCode == 123) { // Prevent F12
+        return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+        return false;
+    }
+});
+////// Ctrl + u
+jQuery(document).ready(function($){
+  $(document).keydown(function(event) { 
+    var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+  if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
+  return false; 
+  }
+ });
+});
+////// Tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+    
